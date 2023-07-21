@@ -22,3 +22,4 @@ imputer = Imputers(missing_values = 'NaN', strategy = 'mean', axis = 0)
 #fitting the imputer object
 imputer=imputer.fit(x[:, 1:3]) 
 x[:, 1:3] = imputer.transform(x[:, 1:3])
+
